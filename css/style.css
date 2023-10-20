@@ -26,7 +26,16 @@
     align-items: center;
 }
 
-/*header*/
+.flex-d-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-d-column{
+    display: flex;
+    flex-direction: column;
+}
+/*HEADER*/
 header{
     height: 6rem;
     background-color: rgb(0, 132, 253);
@@ -48,7 +57,7 @@ header .container .logo img{
     height: 40px;
 }
 
-/*main*/
+/*MAIN*/
 /*jumbotron*/
 
 main .jumbotron{
@@ -57,7 +66,7 @@ main .jumbotron{
 
 main .jumbotron .container .col-blue{
     width: 100%;
-    height: 30rem;
+    height: 29rem;
     background-color: rgb(181, 221, 255);
     margin-bottom: 2rem;
     border-radius: 30px;
@@ -70,4 +79,24 @@ main .jumbotron .container .col-blue:first-child {
 
 main .jumbotron .container .col-blue:last-child{
     margin-bottom: 4rem;
+}
+
+/*strategic planning*/
+main .strategic{
+    background-color: rgb(151, 146, 228);
+    height:100%;
+}
+
+main .strategic .container .col-left{
+    width: 100%;
+    height: 55rem;
+    margin-top: 3rem;
+}
+
+main .strategic .container .col-right{
+    width: 100%;
+    height: 55rem;
+    background-color: white;
+    margin-bottom: 3rem;
+    border-radius: 30px;
 }
