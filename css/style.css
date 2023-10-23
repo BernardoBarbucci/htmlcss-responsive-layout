@@ -47,7 +47,7 @@ body{
 }
 /*HEADER*/
 header{
-    height: 6rem;
+    height: 5rem;
     background-color: rgb(0, 132, 253);
 }
 
@@ -82,9 +82,20 @@ main .jumbotron .container .col-blue{
     border-radius: 30px;
 }
 
-main .jumbotron .container .col-blue:first-child {
+main .jumbotron .container .col-blue:first-child{
     height: 47rem;
     margin-top: 3rem;
+    text-align: center;
+}
+
+.jumbotron .container .col-blue:first-child h1{
+    color: rgb(0, 132, 253);
+    font-size: 33px;
+    padding: 2rem 0;
+}
+
+.jumbotron .container .col-blue:first-child p{
+    
 }
 
 main .jumbotron .container .col-blue:last-child{
@@ -118,7 +129,6 @@ main .strategic .container .col-right{
 main .testimonials .container .text{
     height: 28rem;
     width: 100%;
-    background-color: blue;
     text-align: center;
 }
 
