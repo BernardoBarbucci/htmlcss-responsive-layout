@@ -12,7 +12,7 @@ body{
 
 /*partendo dal mobile si considera una width totale di 480px*/
 .container{
-    max-width: 475px;
+    width: 475px;
     margin: 0 auto;
 }
 
@@ -88,14 +88,14 @@ main .jumbotron .container .col-blue:first-child{
     
 }
 
-.jumbotron .container .col-blue:first-child h1{
+.jumbotron .container .col-blue .left-part h1{
     color: rgb(0, 132, 253);
     font-size: 33px;
     padding: 2rem 0;
     padding-left: 2rem;
 }
 
-.jumbotron .container .col-blue:first-child p{
+.jumbotron .container .col-blue .left-part p{
     line-height: 30px;
     font-weight: bold;
     color: rgb(77, 77, 77);
@@ -103,7 +103,7 @@ main .jumbotron .container .col-blue:first-child{
     padding-bottom: 3rem;
 }
 
-.jumbotron .container .col-blue:first-child button{
+.jumbotron .container .col-blue .left-part button{
     height: 3rem;
     width: 15rem;
     border-radius: 30px;
@@ -206,11 +206,7 @@ main .testimonials{
     background-color: aqua;
 }
 
-
-
 /*get started*/
-
-
 
 /*footer*/
 footer{
@@ -231,6 +227,26 @@ footer .container-small h2{
     padding-bottom: 3rem;
 }
 
+/*media queries*/
+    /* Stili per schermi con larghezza compresa tra 576px e 768px */
+@media (min-width: 576px) and (max-width: 768px) {
+    .container {
+        width: 700px;
+    }
 
+    .main .jumbotron .container .col-blue {
+        width: calc(100% / 3);
+    }
 
-/*per media queries tieni conto che vanno cambiate le grandezze fisse*/
+    .main .jumbotron .container .col-blue:first-child {
+        width: calc(2/3 * 100%);
+        float: left;
+    }
+
+    .main .jumbotron .container .col-blue:nth-child(2) {
+        width: calc(1/3 * 100%);
+        float: left;
+    }
+}
+
+ 
