@@ -88,9 +88,8 @@ main .jumbotron .container .col-blue{
 }
 
 main .jumbotron .container .col-blue:first-child{
-    height: 47rem;
+    height: 43rem;/*da togliere questa altezza fissa, trovare un modo per non tagliare l'img*/
     margin-top: 3rem;
-    
 }
 
 .jumbotron .container .col-blue .left-part h1{
@@ -117,7 +116,6 @@ main .jumbotron .container .col-blue:first-child{
     font-size: 18px;
     margin-left: 2rem;
     color: white;
-    margin-bottom: 41px;
 }
 
 .jumbotron .container .col-blue .left-part button > i{
@@ -129,9 +127,14 @@ main .jumbotron .container .col-blue:last-child{
     margin-bottom: 4rem;
 }
 
+.jumbotron .container .col-blue:first-child .right-part{
+    display: flex;
+    justify-content: start;
+    /*padding-top: 97px;*/
+}
+
 .jumbotron .container .col-blue:first-child img{
-    width: 80%;
-    margin-left: 3rem;
+    width: 67%;
 }
 
 .jumbotron .container .col-blue:nth-child(2),
@@ -142,13 +145,13 @@ main .jumbotron .container .col-blue:last-child{
 }
 
 .jumbotron .container .col-blue i{
-    font-size: 35px;
+    font-size: 65px;
     color: rgb(0, 132, 253);
 }
 
 .jumbotron .container .col-blue h1{
     color: rgb(0, 132, 253);
-    font-size: 33px;
+    font-size: 20px;
 }
 
 .jumbotron .container .col-blue p{
@@ -271,19 +274,22 @@ footer .container-small h2{
     main .jumbotron .container {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
     }
 
     main .jumbotron .container .col-blue {
-        width: calc(100% / 3);
+        width: calc(100% / 3 - 1rem);
+        margin-right: 1rem;
+        margin-bottom: 1rem;
     }
 
     main .jumbotron .container .col-blue:first-child {
-        width: calc(2 / 3 * 100%);
-        
+        width: calc((2 / 3 * 100%) - 1rem);
     }
 
     main .jumbotron .container .col-blue:nth-child(2) {
-        width: calc(1 / 3 * 100%);
+        width: calc((1 / 3 * 100%) - 1rem);
+        margin-top: 3rem;
     }
 }
 
