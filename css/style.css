@@ -85,8 +85,10 @@ main .jumbotron .container .col-blue{
     background-color: rgb(181, 221, 255);
     margin-bottom: 2rem;
     border-radius: 30px;
+    padding-top: 2rem;
 }
 
+/*prima colonna con img*/
 main .jumbotron .container .col-blue:first-child{
     height: 43rem;/*da togliere questa altezza fissa, trovare un modo per non tagliare l'img*/
     margin-top: 3rem;
@@ -94,9 +96,9 @@ main .jumbotron .container .col-blue:first-child{
 
 .jumbotron .container .col-blue .left-part h1{
     color: rgb(0, 132, 253);
-    font-size: 33px;
-    padding: 2rem 0;
+    font-size: 25px;
     padding-left: 2rem;
+    padding-bottom: 2rem;
 }
 
 .jumbotron .container .col-blue .left-part p{
@@ -104,7 +106,7 @@ main .jumbotron .container .col-blue:first-child{
     font-weight: bold;
     color: rgb(77, 77, 77);
     padding-left: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 }
 
 .jumbotron .container .col-blue .left-part button{
@@ -123,10 +125,6 @@ main .jumbotron .container .col-blue:first-child{
     font-size: 20px;
 }
 
-main .jumbotron .container .col-blue:last-child{
-    margin-bottom: 4rem;
-}
-
 .jumbotron .container .col-blue:first-child .right-part{
     display: flex;
     justify-content: start;
@@ -135,6 +133,11 @@ main .jumbotron .container .col-blue:last-child{
 
 .jumbotron .container .col-blue:first-child img{
     width: 67%;
+}
+/*fine prima colonna*/
+
+main .jumbotron .container .col-blue:last-child{
+    margin-bottom: 4rem;
 }
 
 .jumbotron .container .col-blue:nth-child(2),
@@ -147,17 +150,20 @@ main .jumbotron .container .col-blue:last-child{
 .jumbotron .container .col-blue i{
     font-size: 65px;
     color: rgb(0, 132, 253);
+    padding-bottom: 2rem;
 }
 
 .jumbotron .container .col-blue h1{
     color: rgb(0, 132, 253);
     font-size: 20px;
+    padding-bottom: 2rem;
 }
 
 .jumbotron .container .col-blue p{
     line-height: 30px;
     font-weight: bold;
     color: rgb(77, 77, 77);
+    padding: 0 0.7rem;
 }
 
 /*strategic planning*/
