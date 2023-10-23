@@ -85,17 +85,34 @@ main .jumbotron .container .col-blue{
 main .jumbotron .container .col-blue:first-child{
     height: 47rem;
     margin-top: 3rem;
-    text-align: center;
+    
 }
 
 .jumbotron .container .col-blue:first-child h1{
     color: rgb(0, 132, 253);
     font-size: 33px;
     padding: 2rem 0;
+    padding-left: 2rem;
 }
 
 .jumbotron .container .col-blue:first-child p{
-    
+    line-height: 30px;
+    font-weight: bold;
+    color: rgb(77, 77, 77);
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+}
+
+.jumbotron .container .col-blue:first-child button{
+    height: 3rem;
+    width: 15rem;
+    border-radius: 30px;
+    background: rgb(0, 132, 253);
+    border: none;
+    font-size: 18px;
+    margin-left: 2rem;
+    color: white;
+    margin-bottom: 41px;
 }
 
 main .jumbotron .container .col-blue:last-child{
@@ -103,7 +120,8 @@ main .jumbotron .container .col-blue:last-child{
 }
 
 .jumbotron .container .col-blue:first-child img{
-    width: 100%;
+    width: 80%;
+    margin-left: 3rem;
 }
 /*strategic planning*/
 main .strategic{
