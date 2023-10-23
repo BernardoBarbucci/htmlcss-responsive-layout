@@ -120,6 +120,11 @@ main .jumbotron .container .col-blue:first-child{
     margin-bottom: 41px;
 }
 
+.jumbotron .container .col-blue .left-part button > i{
+    color: white;
+    font-size: 20px;
+}
+
 main .jumbotron .container .col-blue:last-child{
     margin-bottom: 4rem;
 }
@@ -128,6 +133,30 @@ main .jumbotron .container .col-blue:last-child{
     width: 80%;
     margin-left: 3rem;
 }
+
+.jumbotron .container .col-blue:nth-child(2),
+.jumbotron .container .col-blue:nth-child(3),
+.jumbotron .container .col-blue:nth-child(4),
+.jumbotron .container .col-blue:nth-child(5){
+    text-align: center;
+}
+
+.jumbotron .container .col-blue i{
+    font-size: 35px;
+    color: rgb(0, 132, 253);
+}
+
+.jumbotron .container .col-blue h1{
+    color: rgb(0, 132, 253);
+    font-size: 33px;
+}
+
+.jumbotron .container .col-blue p{
+    line-height: 30px;
+    font-weight: bold;
+    color: rgb(77, 77, 77);
+}
+
 /*strategic planning*/
 main .strategic{
     background-color: rgb(151, 146, 228);
