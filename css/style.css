@@ -12,7 +12,7 @@ body{
 
 /*partendo dal mobile si considera una width totale di 480px*/
 .container{
-    width: 420px;
+    max-width: 475px;
     margin: 0 auto;
 }
 
@@ -91,6 +91,9 @@ main .jumbotron .container .col-blue:last-child{
     margin-bottom: 4rem;
 }
 
+.jumbotron .container .col-blue:first-child img{
+    width: 100%;
+}
 /*strategic planning*/
 main .strategic{
     background-color: rgb(151, 146, 228);
@@ -113,12 +116,16 @@ main .strategic .container .col-right{
 
 /*testimonials*/
 main .testimonials .container .text{
-    height: 35rem;
+    height: 28rem;
     width: 100%;
     background-color: blue;
-    margin: 2rem 0;
     text-align: center;
 }
+
+main .testimonials .container .text > *{
+    padding: 2rem 0;
+}
+
 
 main .testimonials .container .partners{
     height: 41rem;
@@ -141,10 +148,11 @@ main .testimonials{
 
 .benefits h1{
     color: white;
-    font-size: 45px;
+    font-size: 39px;
     font-weight: bolder;
     text-align: center;
-}s
+    padding: 4rem 0;
+}
 
 .benefits .container .col-white{
     height: 36rem;
@@ -170,3 +178,6 @@ main .testimonials{
     background-color: aqua;
 }
 
+
+
+/*per media queries tieni conto che vanno cambiate le grandezze fisse*/
