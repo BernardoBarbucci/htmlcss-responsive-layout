@@ -208,4 +208,29 @@ main .testimonials{
 
 
 
+/*get started*/
+
+
+
+/*footer*/
+footer{
+    background-color: rgb(51, 51, 51);
+}
+
+footer .container-small h1{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+footer .container-small h2{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+
+
 /*per media queries tieni conto che vanno cambiate le grandezze fisse*/
