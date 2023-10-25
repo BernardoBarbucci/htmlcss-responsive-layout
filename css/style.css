@@ -132,8 +132,7 @@ main .jumbotron .container .col-blue:first-child{
 }
 
 .jumbotron .container .col-blue:first-child img{
-    width: 300px;
-    padding-top: 60px;
+    width: 287px;
 }
 /*fine prima colonna*/
 
@@ -330,7 +329,7 @@ footer .container-small h2{
 
 /*media queries*/
     /* Stili per schermi con larghezza compresa tra 576px e 768px */
-@media (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 576px){
     .container {
         max-width: 700px;
     }
@@ -356,45 +355,58 @@ footer .container-small h2{
         margin-top: 3rem;
         height: auto;
     }
+}
 
-    .jumbotron .container .col-blue:first-child img{
-        width: 87%;
-        padding-top: 43px;
+@media screen and (min-width: 768px){
+    .container {
+        max-width: 920px;
     }
+
+    main .jumbotron .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    main .jumbotron .container .col-blue {
+        width: calc(100% / 3 - 1rem);
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    main .jumbotron .container .col-blue:first-child {
+        width: calc((2 / 3 * 100%) - 1rem);
+    }
+
+    main .jumbotron .container .col-blue:nth-child(2) {
+        width: calc((1 / 3 * 100%) - 1rem);
+        margin-top: 3rem;
+        height: auto;
+    }
+/*fine jumbo*/
 
 }
 
-/*impostazione media correzione di ricca ->
 
-@media screen and (min-width: 768px) {
-    .col-blue{
-        width: calc((100% / 3) - 1rem);
+@media screen and (min-width: 992px) {
+    .jumbotron .container .col-blue{
+        width: calc(100% / 3 - 1rem);
         margin: 0.5rem;
     }
 
-    .col-blue-double{
+    .jumbotron .container .col-blue:first-child{
         width: calc((100% / 3 * 2) - 1rem);
+        margin-top: 3rem;
     }
 
     .container{
-        max-width: 700px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    */
-
-@media screen and (min-width: 992) {
-    .col-blue{
-        width: calc((100% / 3) - 1rem);
-        margin: 0.5rem;
+        max-width: 1200px;
     }
 
-    .col-blue-double{
-        width: calc((100% / 3 * 2) - 1rem);
+    .jumbotron .container .col-blue:first-child{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
-
-    .container{
-        max-width: 925px;
-    }
+/*fine jumbo*/
 }
