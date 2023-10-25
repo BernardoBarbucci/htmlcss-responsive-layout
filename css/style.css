@@ -198,6 +198,7 @@ main .strategic .container .col-right{
 
 .strategic .container .col-left img{
     width: 100%;
+    padding-top: 1.5rem;
 }
 
 .strategic .container .col-left p{
@@ -207,6 +208,42 @@ main .strategic .container .col-right{
     line-height: 40px;
 }
 
+
+.strategic .container .col-right{
+    color: rgb(0, 0, 0);
+}
+
+.strategic .container .col-right h1{
+    font-size: 18px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.strategic .container .col-right img{
+    width: 100%;
+    padding-top: 1.5rem;
+}
+
+.strategic .container .col-right p{
+    font-size: 14px;
+    padding-top: 50px;
+    font-weight: 500;
+    line-height: 30px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 50px 1rem;
+}
+
+.strategic .container .col-right .arrow{
+    background-color: rgb(151, 146, 228);
+    border-radius: 50px;
+    height: 2rem;
+    width:  2rem;
+    text-align: center;
+    padding-top: 7px;
+    margin: 0 auto;
+}
 /*testimonials*/
 main .testimonials .container .text{
     height: 28rem;
