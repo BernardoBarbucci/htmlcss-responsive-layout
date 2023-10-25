@@ -12,7 +12,7 @@ body{
 
 /*partendo dal mobile si considera una width totale di 480px*/
 .container{
-    max-width: 475px;
+    width: 86vw;
     margin: 0 auto;
 }
 
@@ -127,14 +127,13 @@ main .jumbotron .container .col-blue:first-child{
 }
 
 .jumbotron .container .col-blue:first-child .right-part{
-    display: flex;
-    justify-content: start;
-    /*padding-top: 97px;*/
+    height: 20rem;
+    margin-top: 44px;
 }
 
 .jumbotron .container .col-blue:first-child img{
-    width: 67%;
-    padding-top: 70px;
+    width: 300px;
+    padding-top: 60px;
 }
 /*fine prima colonna*/
 
@@ -186,6 +185,26 @@ main .strategic .container .col-right{
     background-color: white;
     margin-bottom: 3rem;
     border-radius: 30px;
+}
+
+.strategic .container .col-left{
+    color: white;
+}
+
+.strategic .container .col-left h1{
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.strategic .container .col-left img{
+    width: 100%;
+}
+
+.strategic .container .col-left p{
+    font-size: 18px;
+    padding-top: 35px;
+    font-weight: 500;
+    line-height: 40px;
 }
 
 /*testimonials*/
@@ -276,7 +295,7 @@ footer .container-small h2{
     /* Stili per schermi con larghezza compresa tra 576px e 768px */
 @media (min-width: 576px) and (max-width: 768px) {
     .container {
-        width: 700px;
+        max-width: 700px;
     }
 
     main .jumbotron .container {
@@ -327,3 +346,18 @@ footer .container-small h2{
 
 @media screen and (min-width: 768px) {
     */
+
+@media screen and (min-width: 992) {
+    .col-blue{
+        width: calc((100% / 3) - 1rem);
+        margin: 0.5rem;
+    }
+
+    .col-blue-double{
+        width: calc((100% / 3 * 2) - 1rem);
+    }
+
+    .container{
+        max-width: 925px;
+    }
+}
